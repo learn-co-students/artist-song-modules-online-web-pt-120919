@@ -1,7 +1,6 @@
-def Findable
+module Findable
   def find_by_name(name)
-    all.detect do |n|
-      n == name 
-    end
-  end 
-end 
+    all.detect {|a| a.name == name}
+  end
+end
+     
